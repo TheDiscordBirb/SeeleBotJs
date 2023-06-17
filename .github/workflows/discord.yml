@@ -1,0 +1,11 @@
+name: Discord Token
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+  name: Deploy app
+  runs-on: windows
+     steps:
+          API_KEY: ${{ secrets.TOKEN }}
